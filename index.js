@@ -24,20 +24,27 @@ function camelCase(str) {
   // Use the camelCase() function from lodash to convert the string to camelCase
 }
 
-function calculateMedian(arr) {
-  // Use the median() function from lodash to calculate the median of the array
+function capitalize(str) {
+  // Use the capitalize() function from lodash to capitalize the string
 }
 
-function calculateMode(arr) {
-  // Use the mode() function from lodash to calculate the mode of the array
+function sortByNames(arr) {
+  // Use the sortBy() function from lodash to sort the array by name
 }
 
-function calculateStandardDeviation(arr) {
-  // Use the standardDeviation() function from lodash to calculate the standard deviation of the array
+function flatArrayAndCalculateMean(arr) {
+  // Use the mean() function from lodash to calculate the mean of the array
+  // Use the flatten() function from lodash to flatten the array
 }
 
-function calculateVariance(arr) {
-  // Use the variance() function from lodash to calculate the variance of the array
+function sortByNamesAndCapitalizeFirstLetter(arr) {
+  // Use the sortBy() function from lodash to sort the array by name
+  // Use the capitalize() function from lodash to capitalize the first letter of each name
+}
+
+function transformToSnakeCaseAndAllCaps(arr) {
+  // Use the snakeCase() function from lodash to convert the string to snake_case
+  // Use the toUpper() function from lodash to convert the string to uppercase
 }
 
 module.exports = {
@@ -47,4 +54,9 @@ module.exports = {
   fillArray,
   calculateMean,
   camelCase,
+  capitalize,
+  sortByNames,
+  flatArrayAndCalculateMean,
+  sortByNamesAndCapitalizeFirstLetter,
+  transformToSnakeCaseAndAllCaps,
 };

@@ -16,10 +16,19 @@ Use the lodash library to solve the following exercises:
 
 6. The `camelCase` function should convert a string to camelCase using the camelCase function from lodash. [Link to camelCase documentation lodash](https://lodash.com/docs/4.17.15#camelCase)
 
-7. The `calculateMedian` function should calculate the median of an array using the median function from lodash.
+7. The `capitalize` function should capitalize the first letter of a string using the capitalize function from lodash. [Link to capitalize documentation lodash](https://lodash.com/docs/4.17.15#capitalize)
 
-8. The `calculateMode` function should calculate the mode of an array using the mode function from lodash.
+8. The `sortByName` function should sort an array of objects by name using the sortBy function from lodash. [Link to sortBy documentation lodash](https://lodash.com/docs/4.17.15#sortBy)
 
-9. The `calculateStandardDeviation` function should calculate the standard deviation of an array using the standardDeviation function from lodash.
+9. The `flatArrayAndCalculateMean` function should flatten an array and calculate the mean using the mean and flatten functions from lodash. 
+- [Link to mean documentation lodash](https://lodash.com/docs/4.17.15#mean) 
+- [Link to flatten documentation lodash](https://lodash.com/docs/4.17.15#flatten)
 
-10. The `calculateVariance` function should calculate the variance of an array using the variance function from lodash.
+10. The `sortByNameAndCapitalizeFirstLetter` function should sort an array of objects by name and capitalize the first letter of each name using the sortBy and capitalize functions from lodash. 
+- [Link to sortBy documentation lodash](https://lodash.com/docs/4.17.15#sortBy) 
+- [Link to capitalize documentation lodash](https://lodash.com/docs/4.17.15#capitalize)
+
+11. The `transformToSnakeCaseAndAllCaps` function should transform an array of objects to snake_case and all caps using the snakeCase and toUpper functions from lodash.
+
+- [Link to snakeCase documentation lodash](https://lodash.com/docs/4.17.15#snakeCase)
+- [Link to toUpper documentation lodash](https://lodash.com/docs/4.17.15#toUpper)
