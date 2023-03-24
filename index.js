@@ -24,6 +24,22 @@ function camelCase(str) {
   // Use the camelCase() function from lodash to convert the string to camelCase
 }
 
+function calculateMedian(arr) {
+  // Use the median() function from lodash to calculate the median of the array
+}
+
+function calculateMode(arr) {
+  // Use the mode() function from lodash to calculate the mode of the array
+}
+
+function calculateStandardDeviation(arr) {
+  // Use the standardDeviation() function from lodash to calculate the standard deviation of the array
+}
+
+function calculateVariance(arr) {
+  // Use the variance() function from lodash to calculate the variance of the array
+}
+
 module.exports = {
   sum,
   filterFalsyValues,
