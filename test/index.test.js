@@ -23,3 +23,38 @@ test("should calculate mean", () => {
 test("should convert string to camelCase", () => {
   expect(katas.camelCase("hello world")).toEqual("helloWorld");
 });
+
+test("should capitalize first letter of string", () => {
+  expect(katas.capitalize("hello world")).toEqual("Hello world");
+});
+
+test("should sort array of objects by name", () => {
+  expect(katas.sortByNames([{ name: "John" }, { name: "Alex" }])).toEqual([
+    { name: "Alex" },
+    { name: "John" },
+  ]);
+});
+
+test("should flatten array and calculate mean", () => {
+  expect(
+    katas.flatArrayAndCalculateMean([
+      [1, 2],
+      [3, 4],
+    ])
+  ).toEqual(2.5);
+});
+
+test("should sort array of objects by name and capitalize first letter", () => {
+  expect(
+    katas.sortByNamesAndCapitalizeFirstLetter([
+      { name: "john" },
+      { name: "alex" },
+    ])
+  ).toEqual(["Alex", "John"]);
+});
+
+test("should transform array of strings to snake_case and all caps", () => {
+  expect(katas.transformToSnakeCaseAndAllCaps(["Hello World"])).toEqual([
+    "HELLO_WORLD",
+  ]);
+});
