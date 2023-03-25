@@ -2,6 +2,14 @@
 
 # NODE - NPM EXERCISES KATAS
 
+First install all the packages
+
+```sh
+npm i
+```
+
+USe the comand `npm run test` to see how many functions are correct
+
 Use the lodash library to solve the following exercises:
 
 1. The `sum` function should return the sum of two numbers using the add function from lodash. [Link to sum documentation lodash](https://lodash.com/docs/4.17.15#add)
