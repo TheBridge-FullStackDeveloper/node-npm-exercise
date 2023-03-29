@@ -62,6 +62,8 @@ function sortByNamesAndCapitalizeFirstLetter(arr) {
 function transformToSnakeCaseAndAllCaps(arr) {
   // Use the snakeCase() function from lodash to convert the string to snake_case
   // Use the toUpper() function from lodash to convert the string to uppercase
+  let snaked = [lodash.snakeCase(arr)];
+  return [lodash.toUpper(snaked)];
 }
 
 module.exports = {
