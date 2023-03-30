@@ -1,50 +1,71 @@
-// Require the lodash library here in this line
+const _ = require("lodash");
 
 function sum(a, b) {
-  // Use de add() function from lodash to sum the two numbers
+  const result = _.add(a,b);
+  return result;
 }
 
 function filterFalsyValues(arr) {
-  // Use the compact() function from lodash to filter the array
+  const filteredArray = _.compact(arr);
+  return filteredArray;
 }
 
 function differenceInArrays(firstArray, secondArray) {
-  // Use the difference() function from lodash to get the difference between the two arrays
+  const differences = _.difference(firstArray, secondArray);
+  return differences;
 }
 
 function fillArray(arr, value) {
-  // Use the fill() function from lodash to fill the array with the value
+  const filledArray = _.fill(arr, value);
+  return filledArray;
 }
 
 function calculateMean(arr) {
-  // Use the mean() function from lodash to calculate the mean of the array
+  const mean = _.mean(arr);
+  return mean;
 }
 
 function camelCase(str) {
-  // Use the camelCase() function from lodash to convert the string to camelCase
+  const newString = _.camelCase(str);
+  return newString;
 }
 
 function capitalize(str) {
-  // Use the capitalize() function from lodash to capitalize the string
+  const newString = _.capitalize(str);
+  return newString;
 }
 
 function sortByNames(arr) {
-  // Use the sortBy() function from lodash to sort the array by name
+  const orderedArray = _.sortBy(arr, "name");
+  return orderedArray;
 }
 
 function flatArrayAndCalculateMean(arr) {
-  // Use the mean() function from lodash to calculate the mean of the array
-  // Use the flatten() function from lodash to flatten the array
+  const flattenedArray = _.flatten(arr);
+  return _.mean(flattenedArray);
 }
 
 function sortByNamesAndCapitalizeFirstLetter(arr) {
-  // Use the sortBy() function from lodash to sort the array by name
-  // Use the capitalize() function from lodash to capitalize the first letter of each name
+  const orderedArray = _.sortBy(arr, "name");
+  let resultArray = [];
+  for (let i = 0; i < orderedArray.length; i++) {
+    orderedArray[i].name = _.capitalize(orderedArray[i].name);
+    resultArray.push(orderedArray[i].name);
+  }
+  return resultArray;
 }
 
 function transformToSnakeCaseAndAllCaps(arr) {
-  // Use the snakeCase() function from lodash to convert the string to snake_case
-  // Use the toUpper() function from lodash to convert the string to uppercase
+  let newArray = arr;
+  for (let i = 0; i < newArray.length; i++) {
+    newArray[i] = _.snakeCase(newArray[i]);
+  }
+
+  for (let i = 0; i < newArray.length; i++) {
+    newArray[i] = _.toUpper(newArray[i]);
+  }
+
+  return newArray;
 }
 
 module.exports = {
