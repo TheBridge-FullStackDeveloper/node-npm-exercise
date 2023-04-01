@@ -1,3 +1,4 @@
+const { iteratee } = require('lodash')
 const _ = require('lodash')
 
 function sum(a, b) {
@@ -53,9 +54,9 @@ capitalize("hello world")
 
 function sortByNames(arr) {
   // Use the sortBy() function from lodash to sort the array by name
-  _.sortBy(arr)
+  _.sortBy(arr, 'name')
 }
-sortByNames([{ name: "John" }, { name: "Alex" }])
+sortByNames([{ 'name': "John" }, { 'name': "Alex" }])
 // =>[{ name: "John" }, { name: "Alex" }]
 
 function flatArrayAndCalculateMean(arr) {
@@ -67,20 +68,33 @@ function flatArrayAndCalculateMean(arr) {
 flatArrayAndCalculateMean([[1, 2], [3, 4]])
 // => 2.5
 
-function sortByNamesAndCapitalizeFirstLetter(arr) {
+function sortByNamesAndCapitalizeFirstLetter(arr, prop) {
   // Use the sortBy() function from lodash to sort the array by name
   // Use the capitalize() function from lodash to capitalize the first letter of each name
-  // let sortArr = 
-  console.log(_.sortBy(arr, ))
-  // console.log(_.capitalize(arr))
+  let sortArr = _.sortBy(arr, prop)
+  const capitalizedArr = sortArr.map(obj => {
+  const propVal = obj[prop];
+  const capitalizedVal = _.capitalize(propVal);
+    return { ...obj, [prop]: capitalizedVal };
+  });
+
+  return capitalizedArr;
 }
-sortByNamesAndCapitalizeFirstLetter([ { name: "john" }, { name: "alex" }])
-// =>["Alex", "John"]
+sortByNamesAndCapitalizeFirstLetter([{ name: "john" }, { name: "alex" }], 'name')
+
+// =>[{name: "Alex"}, {name: "John"}]
 
 function transformToSnakeCaseAndAllCaps(arr) {
   // Use the snakeCase() function from lodash to convert the string to snake_case
   // Use the toUpper() function from lodash to convert the string to uppercase
+  
+  const str = arr.join(", ")
+  // let snack = console.log(_.toUpper(str))
+  console.log(_.snakeCase(str))
+  
 }
+transformToSnakeCaseAndAllCaps(["Hello World"])
+//=> "HELLO_WORLD"
 
 module.exports = {
   sum,
