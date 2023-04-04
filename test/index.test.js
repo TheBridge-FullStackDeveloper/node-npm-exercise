@@ -1,4 +1,4 @@
-const katas = require("../index");
+const katas = require("../index")
 
 test("adds 1 + 2 to equal 3", () => {
   expect(katas.sum(1, 2)).toBe(3);
