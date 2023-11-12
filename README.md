@@ -1,42 +1,39 @@
-![logotipo de The Bridge](https://user-images.githubusercontent.com/27650532/77754601-e8365180-702b-11ea-8bed-5bc14a43f869.png "logotipo de The Bridge")
+![Logotipo de The Bridge](https://user-images.githubusercontent.com/27650532/77754601-e8365180-702b-11ea-8bed-5bc14a43f869.png "Logotipo de The Bridge")
 
-# NODE - NPM EXERCISES KATAS
+# NODE - EJERCICIOS DE KATAS NPM
 
-First install all the packages
+Primero instala todos los paquetes
 
 ```sh
 npm i
 ```
 
-USe the comand `npm run test` to see how many functions are correct
+Usa la biblioteca lodash para resolver los siguientes ejercicios:
 
-Use the lodash library to solve the following exercises:
+1. La función `sum` debería devolver la suma de dos números utilizando la función `add` de lodash. [Enlace a la documentación de sum de lodash](https://lodash.com/docs/4.17.15#add)
 
-1. The `sum` function should return the sum of two numbers using the add function from lodash. [Link to sum documentation lodash](https://lodash.com/docs/4.17.15#add)
+2. La función `filterFalsyValues` debería devolver un array con los valores falsos filtrados usando la función `compact` de lodash. [Enlace a la documentación de compact de lodash](https://lodash.com/docs/4.17.15#compact)
 
-2. The `filterFalsyValues` function should return an array with the falsy values filtered out using the compact function from lodash. [Link to compact documentation lodash](https://lodash.com/docs/4.17.15#compact)
+3. La función `differenceInArrays` debería devolver un array con la diferencia entre dos arrays utilizando la función `difference` de lodash. [Enlace a la documentación de difference de lodash](https://lodash.com/docs/4.17.15#difference)
 
-3. The `differenceInArrays` function should return an array with the difference between two arrays using the difference function from lodash. [Link to difference documentation lodash](https://lodash.com/docs/4.17.15#difference)
+4. La función `fillArray` debería llenar un array con un valor utilizando la función `fill` de lodash. [Enlace a la documentación de fill de lodash](https://lodash.com/docs/4.17.15#fill)
 
-4. The `fillArray` function should fill an array with a value using the fill function from lodash. [Link to fill documentation lodash](https://lodash.com/docs/4.17.15#fill)
+5. La función `calculateMean` debería calcular la media de un array usando la función `mean` de lodash. [Enlace a la documentación de mean de lodash](https://lodash.com/docs/4.17.15#mean)
 
-5. The `calculateMean` function should calculate the mean of an array using the mean function from lodash. [Link to mean documentation lodash](https://lodash.com/docs/4.17.15#mean)
+6. La función `camelCase` debería convertir un string a camelCase utilizando la función `camelCase` de lodash. [Enlace a la documentación de camelCase de lodash](https://lodash.com/docs/4.17.15#camelCase)
 
-6. The `camelCase` function should convert a string to camelCase using the camelCase function from lodash. [Link to camelCase documentation lodash](https://lodash.com/docs/4.17.15#camelCase)
+7. La función `capitalize` debería capitalizar la primera letra de un string utilizando la función `capitalize` de lodash. [Enlace a la documentación de capitalize de lodash](https://lodash.com/docs/4.17.15#capitalize)
 
-7. The `capitalize` function should capitalize the first letter of a string using the capitalize function from lodash. [Link to capitalize documentation lodash](https://lodash.com/docs/4.17.15#capitalize)
+8. La función `sortByName` debería ordenar un array de objetos por nombre utilizando la función `sortBy` de lodash. [Enlace a la documentación de sortBy de lodash](https://lodash.com/docs/4.17.15#sortBy)
 
-8. The `sortByName` function should sort an array of objects by name using the sortBy function from lodash. [Link to sortBy documentation lodash](https://lodash.com/docs/4.17.15#sortBy)
+9. La función `flatArrayAndCalculateMean` debería aplanar un array y calcular la media usando las funciones `mean` y `flatten` de lodash. 
+   - [Enlace a la documentación de mean de lodash](https://lodash.com/docs/4.17.15#mean) 
+   - [Enlace a la documentación de flatten de lodash](https://lodash.com/docs/4.17.15#flatten)
 
-9. The `flatArrayAndCalculateMean` function should flatten an array and calculate the mean using the mean and flatten functions from lodash. 
-- [Link to mean documentation lodash](https://lodash.com/docs/4.17.15#mean) 
-- [Link to flatten documentation lodash](https://lodash.com/docs/4.17.15#flatten)
+10. La función `sortByNameAndCapitalizeFirstLetter` debería ordenar un array de objetos por nombre y capitalizar la primera letra de cada nombre usando las funciones `sortBy` y `capitalize` de lodash. 
+    - [Enlace a la documentación de sortBy de lodash](https://lodash.com/docs/4.17.15#sortBy) 
+    - [Enlace a la documentación de capitalize de lodash](https://lodash.com/docs/4.17.15#capitalize)
 
-10. The `sortByNameAndCapitalizeFirstLetter` function should sort an array of objects by name and capitalize the first letter of each name using the sortBy and capitalize functions from lodash. 
-- [Link to sortBy documentation lodash](https://lodash.com/docs/4.17.15#sortBy) 
-- [Link to capitalize documentation lodash](https://lodash.com/docs/4.17.15#capitalize)
-
-11. The `transformToSnakeCaseAndAllCaps` function should transform an array of objects to snake_case and all caps using the snakeCase and toUpper functions from lodash.
-
-- [Link to snakeCase documentation lodash](https://lodash.com/docs/4.17.15#snakeCase)
-- [Link to toUpper documentation lodash](https://lodash.com/docs/4.17.15#toUpper)
+11. La función `transformToSnakeCaseAndAllCaps` debería transformar un array de objetos a snake_case y todo en mayúsculas usando las funciones `snakeCase` y `toUpper` de lodash.
+    - [Enlace a la documentación de snakeCase de lodash](https://lodash.com/docs/4.17.15#snakeCase)
+    - [Enlace a la documentación de toUpper de lodash](https://lodash.com/docs/4.17.15#toUpper)
