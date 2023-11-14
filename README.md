@@ -14,12 +14,6 @@ Instalar el paquete de lodash
 npm i lodash
 ```
 
-Para poder ejecutar los tests, ejecuta el siguiente comando:
-
-```sh
-npm run test
-```
-
 Usa la biblioteca lodash para resolver los siguientes ejercicios:
 
 1. La función `sum` debería devolver la suma de dos números utilizando la función `add` de lodash. [Enlace a la documentación de sum de lodash](https://lodash.com/docs/4.17.15#add)
