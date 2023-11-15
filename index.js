@@ -38,9 +38,9 @@ function flatArrayAndCalculateMean(arr) {
 }
 
 function sortByNamesAndCapitalizeFirstLetter(arr) {
-  const mapArray = lodash.map(arr, "name");
-  const sortedArray = lodash.sortBy(mapArray);
-  return lodash.map(sortedArray, lodash.capitalize);
+  const sortedArray = lodash.sortBy(arr, ["name"]);
+  const flattenArr = lodash.flatten(sortedArray);
+  return flattenArr.map(e => lodash.capitalize(e.name));
 }
 
 function transformToSnakeCaseAndAllCaps(arr) {
