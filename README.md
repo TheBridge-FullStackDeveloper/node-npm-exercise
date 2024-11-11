@@ -44,7 +44,7 @@ Usa la biblioteca lodash para resolver los siguientes ejercicios:
 
 10. La función `sortByNameAndCapitalizeFirstLetter` debería ordenar un array de objetos por nombre, transformar el array de objectos en array de strings y capitalizar la primera letra de cada nombre usando las funciones `sortBy` y `capitalize` de lodash. 
     - [Enlace a la documentación de sortBy de lodash](https://lodash.com/docs/4.17.15#sortBy)
-    - - [Enlace a la documentación de map de lodash](https://lodash.com/docs#map)
+    - [Enlace a la documentación de map de lodash](https://lodash.com/docs#map)
     - [Enlace a la documentación de capitalize de lodash](https://lodash.com/docs/4.17.15#capitalize)
 
 11. La función `transformToSnakeCaseAndAllCaps` debería transformar un array de objetos a snake_case y todo en mayúsculas usando las funciones `snakeCase` y `toUpper` de lodash.
