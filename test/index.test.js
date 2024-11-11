@@ -23,7 +23,7 @@ test("should calculate mean", () => {
 test("should convert string to camelCase", () => {
   expect(katas.camelCase("hello world")).toEqual("helloWorld");
 });
-
+  
 test("should capitalize first letter of string", () => {
   expect(katas.capitalize("hello world")).toEqual("Hello world");
 });
